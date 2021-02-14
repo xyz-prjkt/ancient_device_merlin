@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 The ancientOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/lineage_merlin.mk
+   $(LOCAL_DIR)/ancient_merlin.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_merlin-user \
-    lineage_merlin-userdebug \
-    lineage_merlin-eng
+    ancient_merlin-user \
+    ancient_merlin-userdebug \
+    ancient_merlin-eng
