@@ -22,9 +22,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Dalvik
-$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
-
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/merlin/merlin-vendor.mk)
 
@@ -33,6 +30,10 @@ $(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libldacBT_dec
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
@@ -50,7 +51,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.mt6768.rc \
-    init.safailnet.rc \
     fstab.mt6768
 
 # DT2W
@@ -90,3 +90,13 @@ PRODUCT_PACKAGES += \
 # RcsService
 PRODUCT_PACKAGES += \
     RcsService
+
+# ImsInit hack
+PRODUCT_PACKAGES += \
+    ImsInit
+
+# WiFi
+PRODUCT_PACKAGES += \
+    WifiOverlay \
+    TetheringConfigOverlay
+

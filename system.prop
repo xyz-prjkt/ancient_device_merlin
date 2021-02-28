@@ -17,6 +17,17 @@ persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera
 vendor.camera.aux.packageblacklist=org.telegram.messenger,com.microsoft.teams,com.discord
 
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.image-dex2oat-filter=quicken 
+dalvik.vm.image-dex2oat-threads=8 
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7 
+dalvik.vm.dex2oat-filter=quicken 
+dalvik.vm.dex2oat-threads=8 
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7 
+dalvik.vm.boot-dex2oat-threads=8 
+dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+
 # Display
 debug.sf.disable_backpressure=1
 debug.sf.latch_unsignaled=1
@@ -52,6 +63,7 @@ ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.running_without_sync_framework=true
 ro.surface_flinger.vsync_event_phase_offset_ns=2000000 
 ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
+debug.sf.enable_hwc_vds=0
 
 # Radio
 persist.internalAntenna.enable=true
@@ -72,6 +84,11 @@ ro.mediatek.wlan.wsc=1
 wifi.direct.interface=p2p0
 wifi.interface=wlan0
 wifi.tethering.interface=ap0
+
+# ZRAM
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=24
 
 # Zygote preforking
 persist.device_config.runtime_native.usap_pool_enabled=true
