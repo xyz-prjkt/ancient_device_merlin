@@ -14,10 +14,6 @@
 # limitations under the License.
 #
 
-# Boot animation
-TARGET_SCREEN_WIDTH := 1080
-TARGET_SCREEN_HEIGHT := 2340
-
 # Inherit from merlin device makefile
 $(call inherit-product, device/xiaomi/merlin/device.mk)
 
@@ -34,6 +30,11 @@ $(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 #
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
+
+## Ancient Identifier.
+ANCIENT_OFFICIAL := true
+ANCIENT_GAPPS := true
+TARGET_USES_BLUR := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := merlin
