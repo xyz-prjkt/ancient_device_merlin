@@ -21,3 +21,4 @@ COMMON_LUNCH_CHOICES := \
     ancient_merlin-user \
     ancient_merlin-userdebug \
     ancient_merlin-eng
+
