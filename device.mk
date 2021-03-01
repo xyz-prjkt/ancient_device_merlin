@@ -40,7 +40,8 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay
+    $(DEVICE_PATH)/overlay \
+    $(DEVICE_PATH)/overlay-ancient
 
 # Dynamic Partitions 
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
