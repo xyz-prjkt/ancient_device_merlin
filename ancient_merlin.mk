@@ -35,6 +35,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 ANCIENT_OFFICIAL := true
 ANCIENT_GAPPS := true
 TARGET_USES_BLUR := true
+TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := merlin
