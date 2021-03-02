@@ -1,6 +1,12 @@
-The Xiaomi Redmi Note 9 (codenamed _"merlin"_) is an entry-level smartphone from Xiaomi announced in April 2020.
+## Copyright (C) 2021 a xyzprjkt LLC
 
-## Device specifications
+![Xiaomi Redmi Note 9](https://github.com/xyz-prjkt/xyz_assets/raw/main/dt_merlin.png)
+
+Redmi Note 9 (codenamed _"merlin"_) adalah smartphone kelas menengah kelas atas dari Xiaomi.
+
+Xiaomi Redmi Note 9 diumumkan dan dirilis pada April 2020.
+
+## Spesifikasi
 
 | Device                  | Xiaomi Redmi Note 9                                         |
 | ----------------------- | :---------------------------------------------------------- |
@@ -19,8 +25,3 @@ The Xiaomi Redmi Note 9 (codenamed _"merlin"_) is an entry-level smartphone from
 | Rear Camera 3           | 2 MP, f/2.4, (macro), AF                                    |
 | Rear Camera 4           | 2 MP, f/2.4, (depth)                                        |
 | Front Camera            | 13 MP, f/2.3, 29mm (standard), 1/3.1", 1.12µm               |
-
-
-## Device picture
-
-![Xiaomi Redmi Note 9](https://akm-img-a-in.tosshub.com/indiatoday/images/story/202004/Redmi_Note_9.jpeg)
