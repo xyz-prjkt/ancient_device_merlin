@@ -43,6 +43,15 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
     $(DEVICE_PATH)/overlay-ancient
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/id.xyz_gapps_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/id.xyz_gapps_permissions.xml \
+    $(LOCAL_PATH)/configs/permissions/id.xyz_gapps_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/id.xyz_gapps_permissions.xml \
+    $(LOCAL_PATH)/configs/permissions/id.xyz_gapps_permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/id.xyz_gapps_permissions.xml \
+    $(LOCAL_PATH)/configs/permissions/id.xyz_android_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/id.xyz_android_permissions.xml \
+    $(LOCAL_PATH)/configs/permissions/id.xyz_android_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/id.xyz_android_permissions.xml \
+    $(LOCAL_PATH)/configs/permissions/id.xyz_android_permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/id.xyz_android_permissions.xml
+
 # Dynamic Partitions 
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
 PRODUCT_SHIPPING_API_LEVEL := 29
